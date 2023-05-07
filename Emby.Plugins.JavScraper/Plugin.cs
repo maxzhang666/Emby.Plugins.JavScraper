@@ -82,7 +82,7 @@ namespace Emby.Plugins.JavScraper
             logger = logManager.CreateLogger<Plugin>();
             logger?.Info($"{Name} - Loaded.");
             db = ApplicationDbContext.Create(applicationPaths);
-            Scrapers = applicationHost.GetExports<AbstractScraper>(false).Where(o => o != null).ToList().AsReadOnly();
+            Scrapers = applicationHost?.GetExports<AbstractScraper>(false).Where(o => o != null).ToList().AsReadOnly();
 
 #if __JELLYFIN__
             ImageProxyService = new ImageProxyService(serverApplicationHost, serviceProvider.GetService<IJsonSerializer>(), logManager.CreateLogger<ImageProxyService>(),
@@ -141,6 +141,11 @@ namespace Emby.Plugins.JavScraper
         {
             Configuration.ConfigurationVersion = DateTime.Now.Ticks;
             base.SaveConfiguration();
+        }
+
+        public void UpdateConfigurationTest(PluginConfiguration configuration)
+        {
+            Configuration = configuration;
         }
     }
 }

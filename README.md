@@ -116,15 +116,7 @@ Emby/Jellyfin 的一个日本电影刮削器插件，可以从某些网站抓取
 # 截图
 
 ## 效果
-
-### 媒体库
-![Movie Library](https://javscraper.com/Emby.Plugins/Screenshots/Screenshot02.png)
-
-### 影片详情
-![Movie Details](https://javscraper.com/Emby.Plugins/Screenshots/Screenshot03.png)
-
-### 识别
-![Movie Search](https://javscraper.com/Emby.Plugins/Screenshots/Screenshot04.png)
+> 去源库查看
 
 ## 配置
 ### Jav Scraper 配置 

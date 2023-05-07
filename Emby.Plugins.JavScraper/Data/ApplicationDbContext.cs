@@ -61,7 +61,7 @@ namespace Emby.Plugins.JavScraper.Data
         /// <returns></returns>
         public static ApplicationDbContext Create(IApplicationPaths applicationPaths)
         {
-            var path = Path.Combine(applicationPaths.DataPath, "JavScraper.db");
+            var path = Path.Combine(applicationPaths?.DataPath, "JavScraper.db");
 
             try
             {

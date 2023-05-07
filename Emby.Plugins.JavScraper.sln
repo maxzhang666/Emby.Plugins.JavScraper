@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emby.Actress", "Emby.Actres
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.GenerateConfigurationPage", "Jellyfin.GenerateConfigurationPage\Jellyfin.GenerateConfigurationPage.csproj", "{B348470A-327C-4A31-B1D2-DE92A2EAD9D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTools", "DevTools\DevTools.csproj", "{77FD5C84-2F71-4545-B688-A5C60D67F194}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug.Jellyfin|Any CPU = Debug.Jellyfin|Any CPU
@@ -53,6 +55,14 @@ Global
 		{B348470A-327C-4A31-B1D2-DE92A2EAD9D9}.Release.Jellyfin|Any CPU.Build.0 = Release|Any CPU
 		{B348470A-327C-4A31-B1D2-DE92A2EAD9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B348470A-327C-4A31-B1D2-DE92A2EAD9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Debug.Jellyfin|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Debug.Jellyfin|Any CPU.Build.0 = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Release.Jellyfin|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Release.Jellyfin|Any CPU.Build.0 = Debug|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FD5C84-2F71-4545-B688-A5C60D67F194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
