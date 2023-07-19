@@ -70,7 +70,7 @@
     <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="@(TempZipDirectory)" />
     <ZipDirectory SourceDirectory="@(TempZipDirectory)" DestinationFile="$(BaseOutputPath)Emby.JavScraper@v$(Version).zip" Condition="'$(Configuration)'=='Debug' or '$(Configuration)'=='Release'" />
     <ZipDirectory SourceDirectory="@(TempZipDirectory)" DestinationFile="$(BaseOutputPath)Jellyfin.JavScraper@v$(Version).zip" Condition="'$(Configuration)'=='Debug.Jellyfin' or '$(Configuration)'=='Release.Jellyfin'" />
-    <RemoveDir Directories="@(TempZipDirectory)" />
+<!--    <RemoveDir Directories="@(TempZipDirectory)" />-->
   </Target>
 
   <!--复制到 Emby 的补丁目录-->
