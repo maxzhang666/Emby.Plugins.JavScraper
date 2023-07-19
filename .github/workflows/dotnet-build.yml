@@ -27,6 +27,7 @@ jobs:
         run: nuget restore Emby.Plugins.JavScraper.sln
 
       - name: Build Solution
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         run: |
           msbuild.exe Emby.Plugins.JavScraper.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:platform="Any CPU" /p:configuration="Release" /p:PublishUrl="../_build"
 
