@@ -39,5 +39,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
-          name: EZRepBundle
+          name: JavScraper
           path: "./Emby.Plugins.JavScraper/bin/Release/netstandard2.1/output"
+          retention-days: 1
