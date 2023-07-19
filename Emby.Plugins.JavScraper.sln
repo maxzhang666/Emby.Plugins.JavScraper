@@ -23,6 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jellyfin.GenerateConfigurat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTools", "DevTools\DevTools.csproj", "{77FD5C84-2F71-4545-B688-A5C60D67F194}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2069CDE6-7EB4-471D-81EB-D9DB1EF03F76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{645F69E2-D09D-48BA-A4BB-4F936449C94A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflow\dotnet-build.yml = .github\workflow\dotnet-build.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug.Jellyfin|Any CPU = Debug.Jellyfin|Any CPU
@@ -69,5 +76,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D521EEA-625C-49C5-8211-C165082747FD}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{645F69E2-D09D-48BA-A4BB-4F936449C94A} = {2069CDE6-7EB4-471D-81EB-D9DB1EF03F76}
 	EndGlobalSection
 EndGlobal
