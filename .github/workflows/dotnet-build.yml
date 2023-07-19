@@ -2,7 +2,9 @@ name: Dll Build
 
 on:
   push:
-    branches: master
+#    branches: master
+    tags:
+      - "*"
 
 jobs:
   build:
